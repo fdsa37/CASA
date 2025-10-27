@@ -34,5 +34,5 @@ $ make
 ```
 
 ## Datesets
-Due to the large-scale of the datasets, we do not upload the raw_dataset and the groundtruth dataset. 
-The datasets that we use in this project is downloaded from [CAIDA](https://www.caida.org/catalog/datasets/passive) and [MAWI](https://mawi.wide.ad.jp/mawi/).
+Due to the large-scale of the datasets, we do not upload the raw dataset and the groundtruth dataset. 
+The datasets that we use in this project is downloaded from [CAIDA](https://www.caida.org/catalog/datasets/passive) and [MAWI](https://mawi.wide.ad.jp/mawi/). The format of the groundtruth dataset is (SrcIP DstIP).
