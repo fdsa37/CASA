@@ -10,3 +10,29 @@ In addition, to achieve higher accuracy and recall, we newly design a multi-hash
 Apart from these technical contributions, we also present a set of thorough theoretical analyses, including how to estimate accurately based on the improved filtering procedure and the new counter architecture,
 how to prove the error bound for both primary elements and quadratic elements, and how to allocate memory space for different data structures. 
 We conduct extensive experiments on four real-world datasets to evaluate CASA. The results show that CASA surpasses prior solutions by 155%-224% in F1-score and achieves 1.22-16 times greater throughput.
+
+## Code Structure
+This folder contains source codes for the paper CASA: A Time and Space Efficient Framework for Finding Heavy Quadratic Elements.
+
+```text
+CASA/
+├── header/               # All header files of the code
+├── BucketCell.cpp        # Implementation code of ABucket
+├── Index_table.cpp       # Implementation code of the index table
+├── OSFilter.cpp          # Implementation code of CSFilter
+├── MurmurHash3.cpp       # Implementation code of Hash function
+└── main.cpp              # Implementation code
+```
+
+## How to run
+
+```bash
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+
+## Datesets
+Due to the large-scale of the datasets, we do not upload the raw_dataset and the groundtruth dataset. 
+The datasets that we use in this project is downloaded from [CAIDA](https://www.caida.org/catalog/datasets/passive) and [MAWI](https://mawi.wide.ad.jp/mawi/).
